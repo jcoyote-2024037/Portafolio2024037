@@ -37,7 +37,7 @@ export default function Testimonials() {
             <span className="heading-sm text-gold/70 shrink-0">—</span>
             <div className="h-px flex-1 golden-line" />
             <h2>Recomendaciones</h2>
-            <div className="h-px flex-1 golden-line" style={{ background: 'linear-gradient(90deg, transparent, rgba(200,169,106,0.3) 50%, rgba(200,169,106,0.05) 80%, transparent)' }} />
+            <div className="h-px flex-1 golden-line" style={{ background: 'linear-gradient(90deg, transparent, rgba(var(--gold-rgb),0.3) 50%, rgba(var(--gold-rgb),0.05) 80%, transparent)' }} />
           </div>
 
           <div className="testimonials-container">

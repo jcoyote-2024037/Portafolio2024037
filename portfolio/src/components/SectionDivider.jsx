@@ -13,7 +13,7 @@ export default function SectionDivider() {
         <defs>
           <linearGradient id="wave-grad" x1="0" y1="0" x2="1" y2="0">
             <stop offset="0%" stopColor="transparent" />
-            <stop offset="50%" stopColor="rgba(200,169,106,0.15)" />
+            <stop offset="50%" stopColor="rgba(var(--gold-rgb),0.15)" />
             <stop offset="100%" stopColor="transparent" />
           </linearGradient>
         </defs>
@@ -25,7 +25,7 @@ export default function SectionDivider() {
         <path
           d="M0,40 C240,20 480,60 720,40 C960,20 1200,60 1440,40"
           fill="none"
-          stroke="rgba(200,169,106,0.08)"
+          stroke="rgba(var(--gold-rgb),0.08)"
           strokeWidth="0.5"
         />
       </svg>

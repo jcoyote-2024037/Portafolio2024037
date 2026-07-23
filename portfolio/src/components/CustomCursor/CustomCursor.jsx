@@ -56,7 +56,7 @@ export default function CustomCursor() {
       <div ref={cursorRef} className="custom-cursor"
         style={{
           width: '30px', height: '30px',
-          background: 'radial-gradient(circle, rgba(200,169,106,0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(var(--gold-rgb),0.15) 0%, transparent 70%)',
           borderRadius: '50%',
           left: '-100px', top: '-100px',
         }}

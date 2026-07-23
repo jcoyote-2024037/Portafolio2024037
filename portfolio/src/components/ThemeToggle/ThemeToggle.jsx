@@ -1,29 +1,37 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FiMoon, FiSun } from 'react-icons/fi';
 
 export default function ThemeToggle() {
-  useEffect(() => {
-    const stored = localStorage.getItem('theme');
-    if (stored === 'light') {
-      document.documentElement.classList.add('light');
+  const [light, setLight] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('theme') === 'light';
     }
+    return false;
+  });
+
+  useEffect(() => {
+    const root = document.documentElement;
+    const isLight = localStorage.getItem('theme') === 'light';
+    root.classList.toggle('light', isLight);
+    setLight(isLight);
   }, []);
 
   const toggle = () => {
     const root = document.documentElement;
-    root.classList.toggle('light');
-    const isLight = root.classList.contains('light');
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    const next = !light;
+    root.classList.toggle('light', next);
+    localStorage.setItem('theme', next ? 'light' : 'dark');
+    setLight(next);
   };
 
   return (
     <button
       onClick={toggle}
-      className="theme-toggle rounded-sm"
-      aria-label="Cambiar tema"
-      title="Cambiar tema"
+      className="theme-toggle"
+      aria-label={light ? 'Modo oscuro' : 'Modo claro'}
+      title={light ? 'Modo oscuro' : 'Modo claro'}
     >
-      <FiSun size={14} />
+      {light ? <FiMoon size={14} /> : <FiSun size={14} />}
     </button>
   );
 }

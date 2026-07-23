@@ -42,9 +42,9 @@ export default function ForgedLogo() {
               transform: isRevealed ? 'translateY(0) scale(1)' : 'translateY(8px) scale(0.8)',
               filter: justRevealed ? 'brightness(1.4)' : isRevealed ? 'brightness(1)' : 'brightness(0)',
               textShadow: justRevealed
-                ? '0 0 20px rgba(200,169,106,0.8), 0 0 40px rgba(200,169,106,0.4)'
+                ? '0 0 20px rgba(var(--gold-rgb),0.8), 0 0 40px rgba(var(--gold-rgb),0.4)'
                 : isRevealed
-                ? '0 0 8px rgba(200,169,106,0.2)'
+                ? '0 0 8px rgba(var(--gold-rgb),0.2)'
                 : 'none',
               transition: 'opacity 0.15s ease, transform 0.15s ease, filter 0.3s ease, text-shadow 0.3s ease',
               transitionDelay: justRevealed ? '0ms' : `${(revealedCount - i) * 30}ms`,

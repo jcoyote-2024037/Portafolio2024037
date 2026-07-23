@@ -135,7 +135,7 @@ export default function BackgroundEffects() {
         ctx.fill();
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size * 3, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(200, 169, 106, ${Math.max(0, this.opacity * 0.08)})`;
+        ctx.fillStyle = `rgba(var(--gold-rgb), ${Math.max(0, this.opacity * 0.08)})`;
         ctx.fill();
       }
     }
@@ -170,7 +170,7 @@ export default function BackgroundEffects() {
         ctx.beginPath();
         ctx.moveTo(this.x1, this.y1);
         ctx.lineTo(this.x2, this.y2);
-        ctx.strokeStyle = `rgba(200, 169, 106, ${this.opacity})`;
+        ctx.strokeStyle = `rgba(var(--gold-rgb), ${this.opacity})`;
         ctx.lineWidth = 0.5;
         ctx.stroke();
       }

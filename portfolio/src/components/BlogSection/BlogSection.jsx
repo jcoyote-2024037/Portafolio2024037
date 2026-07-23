@@ -27,7 +27,7 @@ export default function BlogSection() {
             <span className="heading-sm text-gold/70 shrink-0">—</span>
             <div className="h-px flex-1 golden-line" />
             <h2>Articulos</h2>
-            <div className="h-px flex-1 golden-line" style={{ background: 'linear-gradient(90deg, transparent, rgba(200,169,106,0.3) 50%, rgba(200,169,106,0.05) 80%, transparent)' }} />
+            <div className="h-px flex-1 golden-line" style={{ background: 'linear-gradient(90deg, transparent, rgba(var(--gold-rgb),0.3) 50%, rgba(var(--gold-rgb),0.05) 80%, transparent)' }} />
           </div>
 
           <p className="body-text text-text-secondary mb-14 sm:mb-20" style={{ maxWidth: 'clamp(20rem, 40vw, 40rem)' }}>

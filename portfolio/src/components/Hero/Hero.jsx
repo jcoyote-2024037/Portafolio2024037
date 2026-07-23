@@ -60,7 +60,7 @@ export default function Hero() {
         <div className="absolute top-1/2 right-0 -translate-y-1/2 rounded-full"
           style={{
             width: 'min(50vw, 600px)', height: 'min(80vh, 700px)',
-            background: 'radial-gradient(ellipse, rgba(200,169,106,0.07) 0%, rgba(200,169,106,0.02) 40%, transparent 70%)',
+            background: 'radial-gradient(ellipse, rgba(var(--gold-rgb),0.07) 0%, rgba(var(--gold-rgb),0.02) 40%, transparent 70%)',
             filter: 'blur(80px)',
           }}
         />
@@ -114,7 +114,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <a href="#projects" className="hero-btn-primary group relative caption tracking-[0.2em] overflow-hidden rounded-sm border-glow"
                 style={{ padding: 'clamp(0.7rem, 1.2vh, 1rem) clamp(1.5rem, 2.5vw, 2.5rem)' }}>
-                <span className="absolute inset-0 bg-gradient-to-r from-gold/[0.06] via-gold/[0.15] to-gold/[0.06] border border-gold/20 transition-all duration-700 group-hover:border-gold/40 group-hover:shadow-[0_0_40px_rgba(200,169,106,0.12)]" />
+                <span className="absolute inset-0 bg-gradient-to-r from-gold/[0.06] via-gold/[0.15] to-gold/[0.06] border border-gold/20 transition-all duration-700 group-hover:border-gold/40 group-hover:shadow-[0_0_40px_rgba(var(--gold-rgb),0.12)]" />
                 <span className="relative text-gold group-hover:text-gold-hover transition-colors duration-300 font-medium">Ver Proyectos</span>
               </a>
               <a href="#contact" className="hero-btn-secondary group relative caption tracking-[0.2em] overflow-hidden rounded-sm"
@@ -163,23 +163,23 @@ function ConstellationLines() {
   return (
     <svg className="absolute inset-0 w-full h-full pointer-events-none z-[1]" preserveAspectRatio="none" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
       <motion.g initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2, delay: 0.5 }}>
-        <line x1="200" y1="100" x2="380" y2="250" stroke="rgba(200,169,106,0.06)" strokeWidth="0.5" />
-        <line x1="380" y1="250" x2="500" y2="180" stroke="rgba(200,169,106,0.04)" strokeWidth="0.5" />
-        <line x1="500" y1="180" x2="650" y2="300" stroke="rgba(200,169,106,0.05)" strokeWidth="0.5" />
-        <line x1="650" y1="300" x2="800" y2="220" stroke="rgba(200,169,106,0.04)" strokeWidth="0.5" />
-        <line x1="800" y1="220" x2="950" y2="350" stroke="rgba(200,169,106,0.06)" strokeWidth="0.5" />
-        <line x1="950" y1="350" x2="1100" y2="280" stroke="rgba(200,169,106,0.04)" strokeWidth="0.5" />
-        <line x1="1100" y1="280" x2="1250" y2="400" stroke="rgba(200,169,106,0.05)" strokeWidth="0.5" />
-        <line x1="1250" y1="400" x2="1350" y2="320" stroke="rgba(200,169,106,0.03)" strokeWidth="0.5" />
-        <circle cx="200" cy="100" r="1.5" fill="rgba(200,169,106,0.15)" />
-        <circle cx="380" cy="250" r="1" fill="rgba(200,169,106,0.12)" />
-        <circle cx="500" cy="180" r="1.2" fill="rgba(200,169,106,0.1)" />
-        <circle cx="650" cy="300" r="1.5" fill="rgba(200,169,106,0.15)" />
-        <circle cx="800" cy="220" r="1" fill="rgba(200,169,106,0.1)" />
-        <circle cx="950" cy="350" r="1.3" fill="rgba(200,169,106,0.12)" />
-        <circle cx="1100" cy="280" r="1" fill="rgba(200,169,106,0.1)" />
-        <circle cx="1250" cy="400" r="1.5" fill="rgba(200,169,106,0.15)" />
-        <circle cx="1350" cy="320" r="1" fill="rgba(200,169,106,0.08)" />
+        <line x1="200" y1="100" x2="380" y2="250" stroke="rgba(var(--gold-rgb),0.06)" strokeWidth="0.5" />
+        <line x1="380" y1="250" x2="500" y2="180" stroke="rgba(var(--gold-rgb),0.04)" strokeWidth="0.5" />
+        <line x1="500" y1="180" x2="650" y2="300" stroke="rgba(var(--gold-rgb),0.05)" strokeWidth="0.5" />
+        <line x1="650" y1="300" x2="800" y2="220" stroke="rgba(var(--gold-rgb),0.04)" strokeWidth="0.5" />
+        <line x1="800" y1="220" x2="950" y2="350" stroke="rgba(var(--gold-rgb),0.06)" strokeWidth="0.5" />
+        <line x1="950" y1="350" x2="1100" y2="280" stroke="rgba(var(--gold-rgb),0.04)" strokeWidth="0.5" />
+        <line x1="1100" y1="280" x2="1250" y2="400" stroke="rgba(var(--gold-rgb),0.05)" strokeWidth="0.5" />
+        <line x1="1250" y1="400" x2="1350" y2="320" stroke="rgba(var(--gold-rgb),0.03)" strokeWidth="0.5" />
+        <circle cx="200" cy="100" r="1.5" fill="rgba(var(--gold-rgb),0.15)" />
+        <circle cx="380" cy="250" r="1" fill="rgba(var(--gold-rgb),0.12)" />
+        <circle cx="500" cy="180" r="1.2" fill="rgba(var(--gold-rgb),0.1)" />
+        <circle cx="650" cy="300" r="1.5" fill="rgba(var(--gold-rgb),0.15)" />
+        <circle cx="800" cy="220" r="1" fill="rgba(var(--gold-rgb),0.1)" />
+        <circle cx="950" cy="350" r="1.3" fill="rgba(var(--gold-rgb),0.12)" />
+        <circle cx="1100" cy="280" r="1" fill="rgba(var(--gold-rgb),0.1)" />
+        <circle cx="1250" cy="400" r="1.5" fill="rgba(var(--gold-rgb),0.15)" />
+        <circle cx="1350" cy="320" r="1" fill="rgba(var(--gold-rgb),0.08)" />
       </motion.g>
     </svg>
   );
