@@ -1,25 +1,17 @@
-import { useRef } from 'react';
+﻿import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import SkillCircle from '../SkillCircle';
 import TiltCard from '../TiltCard/TiltCard';
 import Embers from '../Embers/Embers';
 import bgImage from '../../assets/ds1.png';
+import yoImage from '../../assets/yo.jfif';
 
 const skills = [
   { name: 'Frontend', level: 90 },
   { name: 'Backend', level: 85 },
   { name: 'Base de Datos', level: 80 },
   { name: 'DevOps', level: 75 },
-];
-
-const personalInfo = [
-  { label: 'Nombre', value: '[Tu Nombre]' },
-  { label: 'Ubicacion', value: '[Tu Ciudad]' },
-  { label: 'Experiencia', value: '[X] Anos' },
-  { label: 'Formacion', value: 'Ingenieria de Software' },
-  { label: 'Disponibilidad', value: 'Abierto a trabajar' },
-  { label: 'Correo', value: 'tu@email.com' },
 ];
 
 const containerVariants = {
@@ -75,9 +67,12 @@ export default function About() {
               </motion.h3>
 
               <motion.div variants={childVariants} className="body-text text-text-secondary" style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(1rem, 2vw, 1.5rem)' }}>
-                <p>Soy un Desarrollador Full Stack con una profunda pasion por construir soluciones digitales elegantes y eficientes. Mi enfoque combina precision tecnica con resolucion creativa de problemas para entregar software de alta calidad.</p>
-                <p>Mi objetivo es crecer continuamente como desarrollador, asumiendo proyectos desafiantes que amplien los limites de lo posible con las tecnologias web modernas. Creo en escribir codigo limpio, mantenible y que resista el paso del tiempo.</p>
-                <p>Cuando no estoy programando, me encontraras explorando nuevas tecnologias, contribuyendo a proyectos de codigo abierto o profundizando en patrones de arquitectura de sistemas.</p>
+                <p>Soy Diego, desarrollador Junior apasionado por crear aplicaciones web modernas, rápidas y visualmente atractivas. Disfruto transformar ideas en productos funcionales utilizando tecnologías como React, Next.js y Node.js.</p>
+                <p>Me enfoco en escribir código limpio, desarrollar interfaces intuitivas y ofrecer una excelente experiencia de usuario. Siempre estoy aprendiendo nuevas herramientas y enfrentando desafíos que me permitan crecer tanto técnica como profesionalmente.</p>
+                <p className="text-gold/60 mt-4" style={{ fontSize: 'clamp(0.8rem, 1.2vw, 0.9rem)' }}>
+                  <span className="inline-flex items-center gap-2"><span className="w-1 h-1 rounded-full bg-gold/40"></span> Basado en Ciudad de Guatemala</span>
+                  <span className="inline-flex items-center gap-2 ml-6"><span className="w-1 h-1 rounded-full bg-gold/40"></span> coyotediego999@icloud.com</span>
+                </p>
               </motion.div>
 
               <motion.div variants={childVariants} className="flex flex-wrap" style={{ gap: 'clamp(0.5rem, 1vw, 0.75rem)' }}>
@@ -95,18 +90,20 @@ export default function About() {
               </motion.div>
             </div>
 
-            <motion.div variants={childVariants}>
-              <TiltCard className="glass rounded-sm gold-glow border border-gold/[0.06] relative overflow-hidden w-full card-shine gradient-border" style={{ padding: 'clamp(1.5rem, 3vw, 2.5rem)' }}>
+            <motion.div variants={childVariants} className="flex items-center justify-center">
+              <TiltCard className="glass rounded-sm gold-glow border border-gold/[0.06] relative overflow-hidden card-shine gradient-border" style={{ padding: 'clamp(0.75rem, 1.5vw, 1rem)', maxWidth: '380px', width: '100%' }}>
                 <div className="absolute -top-24 -right-24 w-48 h-48 bg-gold/[0.03] rounded-full blur-[60px]" />
-                <h4 className="heading-sm text-gold/60 mb-8 sm:mb-10 relative">Informacion Personal</h4>
-                <div className="space-y-0 relative">
-                  {personalInfo.map((info, i) => (
-                    <motion.div key={info.label} initial={{ opacity: 0, x: 15 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.5, delay: 0.5 + i * 0.08 }}
-                      className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-gold/[0.06] last:border-0" style={{ gap: '0.25rem', paddingTop: 'clamp(0.75rem, 1.5vw, 1rem)', paddingBottom: 'clamp(0.75rem, 1.5vw, 1rem)' }}>
-                      <span className="label-text text-text-secondary/50">{info.label}</span>
-                      <span className="body-sm text-text-primary/85">{info.value}</span>
-                    </motion.div>
-                  ))}
+                <div className="relative">
+                  <img
+                    src={yoImage}
+                    alt="Diego - Desarrollador Junior"
+                    className="w-full h-auto rounded-sm object-cover"
+                    style={{ aspectRatio: '3/4' }}
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 pt-12">
+                    <h4 className="heading-sm text-white">Diego</h4>
+                    <p className="caption text-gold/70">Desarrollador Junior</p>
+                  </div>
                 </div>
               </TiltCard>
             </motion.div>
