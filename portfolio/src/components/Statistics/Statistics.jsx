@@ -5,10 +5,10 @@ import { FiCode, FiServer, FiDatabase, FiTerminal } from 'react-icons/fi';
 import Embers from '../Embers/Embers';
 
 const stats = [
-  { icon: FiCode, label: 'Proyectos Completados', value: 30, suffix: '+' },
-  { icon: FiServer, label: 'Tecnologias Dominadas', value: 15, suffix: '+' },
-  { icon: FiDatabase, label: 'Anos de Experiencia', value: 5, suffix: '+' },
-  { icon: FiTerminal, label: 'Commits Realizados', value: 1200, suffix: '+' },
+  { icon: FiCode, label: 'Proyectos Completados', value: 15, suffix: '+' },
+  { icon: FiServer, label: 'Tecnologias Aprendidas', value: 10, suffix: '+' },
+  { icon: FiDatabase, label: 'Años de Experiencia', value: 3, suffix: '+' },
+  { icon: FiTerminal, label: 'Commits Realizados', value: 500, suffix: '+' },
 ];
 
 function AnimatedCounter({ target, suffix }) {

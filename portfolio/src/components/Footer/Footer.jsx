@@ -20,7 +20,7 @@ export default function Footer() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="flex" style={{ gap: 'clamp(0.5rem, 1vw, 0.75rem)' }}>
-            <MagneticButton as="a" href="#" className="glass rounded-sm flex items-center justify-center border border-gold/[0.06] hover:border-gold/20 hover:bg-gold/[0.03] transition-all duration-300 group"
+            <MagneticButton as="a" href="https://github.com/jcoyote-2024037" target="_blank" rel="noopener noreferrer" className="glass rounded-sm flex items-center justify-center border border-gold/[0.06] hover:border-gold/20 hover:bg-gold/[0.03] transition-all duration-300 group"
               style={{ width: 'clamp(2rem, 3vw, 2.5rem)', height: 'clamp(2rem, 3vw, 2.5rem)' }} aria-label="GitHub">
               <FiGithub className="text-text-secondary/40 group-hover:text-gold text-xs sm:text-sm transition-colors duration-300" />
             </MagneticButton>

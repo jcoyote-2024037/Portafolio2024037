@@ -5,12 +5,14 @@ import Embers from '../Embers/Embers';
 import bgImage from '../../assets/experiencia.png';
 
 const experiences = [
-  { title: 'Desarrollador Full Stack', company: '[Nombre de Empresa]', period: '2023 - Presente', description: 'Desarrollo y mantenimiento de aplicaciones web utilizando React, Node.js y PostgreSQL. Implemente pipelines de CI/CD y mejore el rendimiento del sistema en un 40%.', tags: ['React', 'Node.js', 'PostgreSQL', 'Docker'] },
-  { title: 'Desarrollador Frontend', company: '[Nombre de Empresa]', period: '2022 - 2023', description: 'Construi interfaces de usuario responsivas e implemente integraciones con APIs RESTful. Colabore con equipos de diseno para entregar componentes pixel-perfect.', tags: ['JavaScript', 'React', 'CSS3', 'Git'] },
+  { title: 'Desarrollador de Aplicaciones con React y React Native', company: 'Fundación Kinal', period: '2026', description: 'Desarrollo de aplicaciones móviles y web utilizando React y React Native, implementando interfaces responsivas y conectando con APIs RESTful.', tags: ['React', 'React Native', 'JavaScript', 'APIs'] },
+  { title: 'Desarrollador Backend', company: 'Fundación Kinal', period: '2024 - 2026', description: 'Desarrollo y mantenimiento de servicios backend utilizando Node.js, Express y bases de datos. Implementación de APIs RESTful y lógica de negocio.', tags: ['Node.js', 'Express', 'PostgreSQL', 'REST API'] },
+  { title: 'Desarrollador Frontend', company: 'Fundación Kinal', period: '2024 - 2026', description: 'Construcción de interfaces de usuario responsivas e implementación de integraciones con APIs. Colaboración con equipos de diseño para entregar componentes de alta calidad.', tags: ['React', 'JavaScript', 'CSS3', 'Git'] },
 ];
 
 const education = [
-  { degree: 'Ingenieria de Software', institution: '[Nombre de Universidad]', period: '2020 - 2024', description: 'Enfocada en arquitectura de software, bases de datos y desarrollo web. Cursos relevantes en estructuras de datos, algoritmos y diseno de sistemas.' },
+  { degree: 'Graduando de Tercero Básico', institution: 'Colegio San Bernardino', period: '2023', description: 'Formación académica con enfoque en ciencias y tecnología.' },
+  { degree: 'Certificado Cisco Packet Tracer', institution: 'Cisco Networking Academy', period: '2024', description: 'Certificación en fundamentos de redes, configuración de dispositivos y conceptos básicos de infraestructura de redes con Cisco Packet Tracer.' },
 ];
 
 const containerVariants = {

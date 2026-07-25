@@ -4,10 +4,10 @@ import Embers from '../Embers/Embers';
 import heroImage from '../../assets/hero.png';
 
 const phrases = [
-  'Full Stack Developer',
-  'Software Engineer',
-  'Arquitecto Digital',
-  'UI Innovator'
+  'Desarrollador Junior',
+  'Egresado de Fundacion Kinal',
+  'Desarrollador Frontend',
+  'Desarrollador Web'
 ];
 
 export default function Hero() {
@@ -95,7 +95,7 @@ export default function Hero() {
 
             <motion.div variants={itemVariants} className="subheading text-text-secondary/60 tracking-[0.15em]"
               style={{ fontSize: 'clamp(0.9rem, 1.4vw, 1.35rem)' }}>
-              [Tu Nombre]
+              [Diego Coyote]
             </motion.div>
 
             <motion.h1 variants={itemVariants} className="heading-xl"

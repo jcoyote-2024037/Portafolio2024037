@@ -8,10 +8,10 @@ import bgImage from '../../assets/ds1.png';
 import yoImage from '../../assets/yo.jfif';
 
 const skills = [
-  { name: 'Frontend', level: 90 },
-  { name: 'Backend', level: 85 },
-  { name: 'Base de Datos', level: 80 },
-  { name: 'DevOps', level: 75 },
+  { name: 'Frontend', level: 70 },
+  { name: 'Backend', level: 60 },
+  { name: 'Base de Datos', level: 65 },
+  { name: 'DevOps', level: 37 },
 ];
 
 const containerVariants = {
@@ -76,9 +76,16 @@ export default function About() {
               </motion.div>
 
               <motion.div variants={childVariants} className="flex flex-wrap" style={{ gap: 'clamp(0.5rem, 1vw, 0.75rem)' }}>
-                {['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'Docker', 'Git'].map((skill) => (
-                  <span key={skill} className="caption text-gold/50 border border-gold/10 rounded-sm hover:border-gold/25 hover:text-gold/70 hover:bg-gold/[0.03] transition-all duration-300 cursor-default" style={{ padding: 'clamp(0.375rem, 0.8vw, 0.5rem) clamp(0.625rem, 1.2vw, 0.875rem)' }}>
-                    {skill}
+                {[
+                  { name: 'React', level: 70 },
+                  { name: 'Node.js', level: 60 },
+                  { name: 'TypeScript', level: 57 },
+                  { name: 'PostgreSQL', level: 65 },
+                  { name: 'Docker', level: 37 },
+                  { name: 'Git', level: 70 },
+                ].map((tech) => (
+                  <span key={tech.name} className="caption text-gold/50 border border-gold/10 rounded-sm hover:border-gold/25 hover:text-gold/70 hover:bg-gold/[0.03] transition-all duration-300 cursor-default" style={{ padding: 'clamp(0.375rem, 0.8vw, 0.5rem) clamp(0.625rem, 1.2vw, 0.875rem)' }}>
+                    {tech.name} <span className="text-gold/30">{tech.level}%</span>
                   </span>
                 ))}
               </motion.div>

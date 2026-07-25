@@ -7,16 +7,16 @@ import Embers from '../Embers/Embers';
 import bgImage from '../../assets/ellie.png';
 
 const technologies = [
-  { name: 'React', icon: SiReact, level: 90, color: '#61DAFB' },
-  { name: 'Node.js', icon: SiNodedotjs, level: 85, color: '#339933' },
-  { name: 'Express', icon: SiExpress, level: 85, color: '#FFFFFF' },
-  { name: 'MongoDB', icon: SiMongodb, level: 80, color: '#47A248' },
-  { name: 'PostgreSQL', icon: SiPostgresql, level: 80, color: '#4169E1' },
-  { name: 'Docker', icon: SiDocker, level: 75, color: '#2496ED' },
-  { name: 'Git', icon: SiGit, level: 90, color: '#F05032' },
-  { name: 'Linux', icon: SiLinux, level: 80, color: '#FCC624' },
-  { name: 'TypeScript', icon: SiTypescript, level: 85, color: '#3178C6' },
-  { name: 'JavaScript', icon: SiJavascript, level: 95, color: '#F7DF1E' },
+  { name: 'React', icon: SiReact, level: 75, color: '#61DAFB' },
+  { name: 'Node.js', icon: SiNodedotjs, level: 65, color: '#339933' },
+  { name: 'Express', icon: SiExpress, level: 65, color: '#FFFFFF' },
+  { name: 'MongoDB', icon: SiMongodb, level: 60, color: '#47A248' },
+  { name: 'PostgreSQL', icon: SiPostgresql, level: 70, color: '#4169E1' },
+  { name: 'Docker', icon: SiDocker, level: 40, color: '#2496ED' },
+  { name: 'Git', icon: SiGit, level: 70, color: '#F05032' },
+  { name: 'Linux', icon: SiLinux, level: 60, color: '#FCC624' },
+  { name: 'TypeScript', icon: SiTypescript, level: 50, color: '#3178C6' },
+  { name: 'JavaScript', icon: SiJavascript, level: 80, color: '#F7DF1E' },
 ];
 
 const containerVariants = {
