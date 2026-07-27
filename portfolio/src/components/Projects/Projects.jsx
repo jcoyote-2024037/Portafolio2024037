@@ -5,12 +5,58 @@ import { FiGithub, FiExternalLink, FiArrowUpRight } from 'react-icons/fi';
 import TiltCard from '../TiltCard/TiltCard';
 import Embers from '../Embers/Embers';
 import bgImage from '../../assets/omega.png';
+import bancoImg from '../../assets/banco1.png';
+import toysImg from '../../assets/Toys.png';
+import ahorcadoImg from '../../assets/ahorcado.png';
+import repuestosImg from '../../assets/automotriz.jfif';
+import restauranteImg from '../../assets/res1.png';
 
 const projects = [
-  { title: 'E-Commerce Platform', description: 'Plataforma completa de comercio electronico con carrito de compras, autenticacion y panel de administracion.', image: null, technologies: ['React', 'Node.js', 'MongoDB'], category: 'fullstack', github: '#', demo: '#' },
-  { title: 'Task Manager API', description: 'API RESTful para gestion de tareas con autenticacion JWT, operaciones CRUD y documentacion Swagger.', image: null, technologies: ['TypeScript', 'PostgreSQL', 'Express'], category: 'backend', github: '#', demo: '#' },
-  { title: 'Dashboard Analytics', description: 'Dashboard interactivo con graficos en tiempo real, filtros dinamicos y exportacion de datos.', image: null, technologies: ['React', 'D3.js', 'Node.js'], category: 'frontend', github: '#', demo: '#' },
-  { title: 'Sistema de Chat', description: 'Aplicacion de mensajeria en tiempo real con WebSockets, salas privadas y notificaciones push.', image: null, technologies: ['React', 'Socket.io', 'Docker'], category: 'fullstack', github: '#', demo: '#' },
+  {
+    title: 'Restaurante App',
+    description: 'Aplicacion completa de restaurante con panel de administracion en React y app movil en React Native. Incluye menu digital, sistema de pedidos en tiempo real, reservaciones, gestion de mesas y pasarela de pagos.',
+    image: restauranteImg,
+    technologies: ['React', 'React Native', 'Node.js', 'Express', 'MongoDB'],
+    category: 'fullstack',
+    github: 'https://github.com/pcalderon-2021547/Restaurante',
+    demo: '#',
+  },
+  {
+    title: 'Gestion Bancario (OvaBank)',
+    description: 'Aplicacion bancaria completa con panel de administracion en React y movil en React Native. Incluye gestion de cuentas, transferencias, autenticacion y control de usuarios.',
+    image: bancoImg,
+    technologies: ['React', 'React Native', 'Node.js', 'Express', 'MySQL'],
+    category: 'fullstack',
+    github: 'https://github.com/pdeleon2021364/GestionBancario.git',
+    demo: '#',
+  },
+  {
+    title: 'Pagina de Juguetes',
+    description: 'Catalogo interactivo de juguetes con interfaz dinamica, filtros por categorias y diseño responsivo. Desarrollado con HTML y JavaScript puro.',
+    image: toysImg,
+    technologies: ['HTML', 'JavaScript', 'CSS'],
+    category: 'frontend',
+    github: '#',
+    demo: '#',
+  },
+  {
+    title: 'Ahorcado',
+    description: 'Juego clasico del ahorcado con interfaz interactiva, sistema de puntos, animaciones y multiples categorias de palabras. Frontend puro sin dependencias de servidor.',
+    image: ahorcadoImg,
+    technologies: ['HTML', 'JavaScript', 'CSS'],
+    category: 'frontend',
+    github: 'https://github.com/jcoyote-2024037/Ahorcado-2024037.git',
+    demo: '#',
+  },
+  {
+    title: 'Repuestos Auto',
+    description: 'Sistema de gestion de repuestos automotrices con base de datos relacional en MySQL. Incluye CRUD de productos, busqueda avanzada y reportes de inventario.',
+    image: repuestosImg,
+    technologies: ['MySQL', 'Node.js', 'Express', 'SQL'],
+    category: 'backend',
+    github: 'https://github.com/jcoyote-2024037/RepuestosAuto-2024037.git',
+    demo: '#',
+  },
 ];
 
 const categories = ['todos', 'frontend', 'backend', 'fullstack'];
@@ -108,12 +154,16 @@ export default function Projects() {
                       )}
                       <div className="absolute inset-0 bg-gradient-to-t from-bg-primary/95 via-bg-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-600" />
                       <div className="absolute bottom-4 right-4 flex gap-2.5 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                        <a href={project.github} className="w-9 h-9 glass rounded-sm flex items-center justify-center border border-gold/15 hover:border-gold/40 hover:bg-gold/[0.08] transition-all duration-300" aria-label="GitHub">
-                          <FiGithub className="text-gold/60 text-sm" />
-                        </a>
-                        <a href={project.demo} className="w-9 h-9 glass rounded-sm flex items-center justify-center border border-gold/15 hover:border-gold/40 hover:bg-gold/[0.08] transition-all duration-300" aria-label="Demo">
-                          <FiExternalLink className="text-gold/60 text-sm" />
-                        </a>
+                        {project.github && project.github !== '#' && (
+                          <a href={project.github} target="_blank" rel="noopener noreferrer" className="w-9 h-9 glass rounded-sm flex items-center justify-center border border-gold/15 hover:border-gold/40 hover:bg-gold/[0.08] transition-all duration-300" aria-label="GitHub">
+                            <FiGithub className="text-gold/60 text-sm" />
+                          </a>
+                        )}
+                        {project.demo && project.demo !== '#' && (
+                          <a href={project.demo} target="_blank" rel="noopener noreferrer" className="w-9 h-9 glass rounded-sm flex items-center justify-center border border-gold/15 hover:border-gold/40 hover:bg-gold/[0.08] transition-all duration-300" aria-label="Demo">
+                            <FiExternalLink className="text-gold/60 text-sm" />
+                          </a>
+                        )}
                       </div>
                       <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <FiArrowUpRight className="text-gold/30 text-lg" />
