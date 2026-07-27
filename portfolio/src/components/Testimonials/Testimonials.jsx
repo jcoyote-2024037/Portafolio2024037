@@ -20,8 +20,11 @@ export default function Testimonials() {
 
   useEffect(() => {
     fetch(API_URL)
-      .then((res) => res.json())
-      .then((data) => setRecommendations(data))
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((data) => setRecommendations(Array.isArray(data) ? data : []))
       .catch(() => setRecommendations([]));
   }, []);
 
