@@ -24,7 +24,7 @@ export default function Footer() {
               style={{ width: 'clamp(2rem, 3vw, 2.5rem)', height: 'clamp(2rem, 3vw, 2.5rem)' }} aria-label="GitHub">
               <FiGithub className="text-text-secondary/40 group-hover:text-gold text-xs sm:text-sm transition-colors duration-300" />
             </MagneticButton>
-            <MagneticButton as="a" href="#" className="glass rounded-sm flex items-center justify-center border border-gold/[0.06] hover:border-gold/20 hover:bg-gold/[0.03] transition-all duration-300 group"
+            <MagneticButton as="a" href="https://gt.linkedin.com/" className="glass rounded-sm flex items-center justify-center border border-gold/[0.06] hover:border-gold/20 hover:bg-gold/[0.03] transition-all duration-300 group"
               style={{ width: 'clamp(2rem, 3vw, 2.5rem)', height: 'clamp(2rem, 3vw, 2.5rem)' }} aria-label="LinkedIn">
               <FiLinkedin className="text-text-secondary/40 group-hover:text-gold text-xs sm:text-sm transition-colors duration-300" />
             </MagneticButton>

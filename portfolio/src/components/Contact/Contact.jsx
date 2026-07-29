@@ -118,7 +118,7 @@ export default function Contact() {
               <motion.div variants={itemVariants} style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(0.75rem, 1.5vw, 1rem)' }}>
                 <span className="label-text text-text-secondary/45">Redes Profesionales</span>
                 <div className="flex" style={{ gap: 'clamp(0.5rem, 1vw, 0.75rem)' }}>
-                  <MagneticButton as="a" href="#" className="flex items-center gap-3 glass rounded-sm border border-gold/8 hover:border-gold/25 hover:bg-gold/[0.03] transition-all duration-300 group" style={{ padding: 'clamp(0.5rem, 1vw, 0.75rem) clamp(0.75rem, 1.5vw, 1rem)' }}>
+                  <MagneticButton as="a" href="https://gt.linkedin.com/" className="flex items-center gap-3 glass rounded-sm border border-gold/8 hover:border-gold/25 hover:bg-gold/[0.03] transition-all duration-300 group" style={{ padding: 'clamp(0.5rem, 1vw, 0.75rem) clamp(0.75rem, 1.5vw, 1rem)' }}>
                     <FiLinkedin className="text-text-secondary/50 group-hover:text-gold text-sm transition-colors duration-300" />
                     <span className="body-sm text-text-secondary/60 group-hover:text-text-primary/80 transition-colors duration-300">LinkedIn</span>
                   </MagneticButton>

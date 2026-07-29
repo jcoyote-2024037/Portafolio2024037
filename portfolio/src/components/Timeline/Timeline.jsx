@@ -6,11 +6,11 @@ import Embers from '../Embers/Embers';
 import bgImage from '../../assets/ds1.png';
 
 const timelineData = [
-  { year: '2024', title: 'Graduacion', description: 'Complete mi carrera de Ingenieria de Software con enfoque en desarrollo full-stack.', icon: FiAward },
-  { year: '2023', title: 'Desarrollador Full Stack', description: 'Inicio mi trayectoria como Desarrollador Full Stack, construyendo aplicaciones web escalables.', icon: FiBriefcase },
-  { year: '2022', title: 'Primer Rol Profesional', description: 'Transicion al desarrollo profesional, trabajando con tecnologias web modernas.', icon: FiBriefcase },
-  { year: '2021', title: 'Contribuciones Open Source', description: 'Comence a contribuir a proyectos de codigo abierto y a desarrollar proyectos personales.', icon: FiAward },
-  { year: '2020', title: 'Inicio de la Universidad', description: 'Comence el programa de Ingenieria de Software, profundizando en los fundamentos de la ciencia de la computacion.', icon: FiBookOpen },
+  { year: '2022', title: 'Primer contacto con el desarrollo de software', description: 'Tuve el primer acercamiento al mundo del desarrollo de software y nacio mi pasion por la programacion.', icon: FiAward },
+  { year: '2023', title: 'Graduacion 3ro Basico', description: 'Fin de mis basicos e inicio mi trayectoria como Desarrollador Junior, construyendo aplicaciones web escalables.', icon: FiBriefcase },
+  { year: '2024', title: 'Primer Rol Profesional', description: 'Transicion al desarrollo profesional, trabajando con tecnologias web modernas.', icon: FiBriefcase },
+  { year: '2025', title: 'Contribuciones Open Source', description: 'Comence a contribuir a proyectos de codigo abierto y a desarrollar proyectos personales.', icon: FiAward },
+  { year: '2026', title: 'Desarrollador Junior + Tencnico en Informatica', description: 'Comence el programa de Ingenieria en Sistemas, profundizando en los fundamentos de la ciencia de la computacion, tambien fue el año de mi graduacion de perito en informatica', icon: FiBookOpen },
 ];
 
 const containerVariants = {
